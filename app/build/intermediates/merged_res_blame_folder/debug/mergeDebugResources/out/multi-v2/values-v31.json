@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.pradyu.talkingtom.app-mergeDebugResources-52:/values-v31/values-v31.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\rkambham\\.gradle\\caches\\9.0-milestone-1\\transforms\\81b415dfa1a0a7b868079c068e981d30\\transformed\\jetified-core-splashscreen-1.0.1\\res\\values-v31\\values-v31.xml",
+                    "from": {
+                        "startLines": "2,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,473",
+                        "endLines": "8,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "468,697"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,171 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.pradyu.talkingtom"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-feature android:name="android.hardware.type.watch" />
+11-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:4:5-64
+11-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:4:19-61
+12
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:5:5-68
+13-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:5:22-65
+14    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+14-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:6:5-71
+14-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:6:22-68
+15
+16    <permission
+16-->[androidx.core:core:1.12.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\b23052ee6e24fa2991b0b7af7800d705\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+17        android:name="com.pradyu.talkingtom.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.12.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\b23052ee6e24fa2991b0b7af7800d705\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.12.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\b23052ee6e24fa2991b0b7af7800d705\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.pradyu.talkingtom.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.12.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\b23052ee6e24fa2991b0b7af7800d705\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.12.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\b23052ee6e24fa2991b0b7af7800d705\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:8:5-26:19
+23        android:allowBackup="true"
+23-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:9:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.12.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\b23052ee6e24fa2991b0b7af7800d705\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+27        android:icon="@mipmap/ic_launcher"
+27-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:10:9-43
+28        android:label="Talking Tom"
+28-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:11:9-36
+29        android:supportsRtl="true"
+29-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:12:9-35
+30        android:testOnly="true"
+31        android:theme="@android:style/Theme.DeviceDefault" >
+31-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:13:9-59
+32        <uses-library
+32-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:15:9-92
+33            android:name="com.google.android.wearable"
+33-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:15:23-65
+34            android:required="true" />
+34-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:15:66-89
+35
+36        <activity
+36-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:17:9-25:20
+37            android:name="com.pradyu.talkingtom.MainActivity"
+37-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:18:13-41
+38            android:exported="true"
+38-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:19:13-36
+39            android:theme="@android:style/Theme.DeviceDefault" >
+39-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:20:13-63
+40            <intent-filter>
+40-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:21:13-24:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:22:17-69
+41-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:22:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:23:17-77
+43-->D:\Working\Ideas\Projects\WearOS\TalkingTom\WearOS\app\src\main\AndroidManifest.xml:23:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity
+46-->[androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\186f2002a2ee97ec8d4a1b4025d4fcbe\transformed\jetified-ui-tooling-release\AndroidManifest.xml:23:9-25:39
+47            android:name="androidx.compose.ui.tooling.PreviewActivity"
+47-->[androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\186f2002a2ee97ec8d4a1b4025d4fcbe\transformed\jetified-ui-tooling-release\AndroidManifest.xml:24:13-71
+48            android:exported="true" />
+48-->[androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\186f2002a2ee97ec8d4a1b4025d4fcbe\transformed\jetified-ui-tooling-release\AndroidManifest.xml:25:13-36
+49        <activity
+49-->[androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\0318baabcc70d93d11b6dcb80d768fdf\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:23:9-25:39
+50            android:name="androidx.activity.ComponentActivity"
+50-->[androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\0318baabcc70d93d11b6dcb80d768fdf\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:24:13-63
+51            android:exported="true" />
+51-->[androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\0318baabcc70d93d11b6dcb80d768fdf\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:25:13-36
+52        <activity
+52-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\ad2ae3cc5948a4002d1eb2ceb3cb8747\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+53            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+53-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\ad2ae3cc5948a4002d1eb2ceb3cb8747\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+54            android:exported="false"
+54-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\ad2ae3cc5948a4002d1eb2ceb3cb8747\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+55            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+55-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\ad2ae3cc5948a4002d1eb2ceb3cb8747\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+56
+57        <meta-data
+57-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\c842f032daa4d233cf05006fcb6bb59b\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+58            android:name="com.google.android.gms.version"
+58-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\c842f032daa4d233cf05006fcb6bb59b\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+59            android:value="@integer/google_play_services_version" />
+59-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\c842f032daa4d233cf05006fcb6bb59b\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+60
+61        <provider
+61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\25988f60e86a56ab8bb74bdebe5faf90\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+62            android:name="androidx.startup.InitializationProvider"
+62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\25988f60e86a56ab8bb74bdebe5faf90\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+63            android:authorities="com.pradyu.talkingtom.androidx-startup"
+63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\25988f60e86a56ab8bb74bdebe5faf90\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+64            android:exported="false" >
+64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\25988f60e86a56ab8bb74bdebe5faf90\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+65            <meta-data
+65-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\25988f60e86a56ab8bb74bdebe5faf90\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+66-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\25988f60e86a56ab8bb74bdebe5faf90\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+67                android:value="androidx.startup" />
+67-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\25988f60e86a56ab8bb74bdebe5faf90\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+68            <meta-data
+68-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\b7ad7699602d9a008ee0e1899e035619\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+69-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\b7ad7699602d9a008ee0e1899e035619\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+70                android:value="androidx.startup" />
+70-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\b7ad7699602d9a008ee0e1899e035619\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+73                android:value="androidx.startup" />
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+74        </provider>
+75
+76        <receiver
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+77            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+78            android:directBootAware="false"
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+79            android:enabled="true"
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+80            android:exported="true"
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+81            android:permission="android.permission.DUMP" >
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+83                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+84            </intent-filter>
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+86                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+89                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+92                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\rkambham\.gradle\caches\9.0-milestone-1\transforms\6b5e3cdbc2e631a1a2445aaae243f8ba\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+93            </intent-filter>
+94        </receiver>
+95    </application>
+96
+97</manifest>

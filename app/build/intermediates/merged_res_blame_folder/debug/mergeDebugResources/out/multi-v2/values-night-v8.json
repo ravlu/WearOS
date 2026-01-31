@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.pradyu.talkingtom.app-mergeDebugResources-52:/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\rkambham\\.gradle\\caches\\9.0-milestone-1\\transforms\\81b415dfa1a0a7b868079c068e981d30\\transformed\\jetified-core-splashscreen-1.0.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "85",
+                        "endOffsets": "136"
+                    }
+                }
+            ]
+        }
+    ]
+}

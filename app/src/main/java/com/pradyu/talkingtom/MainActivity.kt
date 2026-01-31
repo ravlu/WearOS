@@ -2,8 +2,6 @@ package com.pradyu.talkingtom
 
 import android.Manifest
 import android.content.pm.PackageManager
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -15,9 +13,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.ImageBitmap
-import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.core.content.ContextCompat
 import androidx.wear.compose.material.MaterialTheme
 import androidx.wear.compose.material.Text
@@ -75,26 +72,23 @@ fun TalkingTomApp(audioEngine: AudioEngine) {
 @Composable
 fun TomScreen(audioEngine: AudioEngine) {
     val state by audioEngine.state.collectAsState()
-    val context = LocalContext.current
-
-    // Load and split bitmap once
-    val frames = remember {
-        val bitmap = BitmapFactory.decodeResource(context.resources, R.drawable.spritesheet)
-        splitBitmap(bitmap)
-    }
 
     // Animation Logic
-    var currentFrameIndex by remember { mutableStateOf(0) }
+    var currentImageRes by remember { mutableStateOf(R.drawable.thinking) }
 
     LaunchedEffect(state) {
-        if (state == TomState.TALKING) {
-            while (true) {
-                // Cycle between first two frames to simulate talking
-                currentFrameIndex = (currentFrameIndex + 1) % 2
-                delay(150)
+        when (state) {
+            TomState.TALKING -> {
+                while (state == TomState.TALKING) {
+                    currentImageRes = R.drawable.happy
+                    delay(150)
+                    currentImageRes = R.drawable.thinking
+                    delay(150)
+                }
             }
-        } else {
-            currentFrameIndex = 0 // Reset to Idle
+            TomState.LISTENING, TomState.IDLE -> {
+                currentImageRes = R.drawable.thinking
+            }
         }
     }
 
@@ -107,31 +101,10 @@ fun TomScreen(audioEngine: AudioEngine) {
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        if (frames.isNotEmpty()) {
-            Image(
-                bitmap = frames[currentFrameIndex % frames.size],
-                contentDescription = "Talking Tom",
-                modifier = Modifier.fillMaxSize()
-            )
-        }
-
-        // Optional debug indicator for listening state
-        /*
-        if (state == TomState.LISTENING) {
-             Text(text = "👂", modifier = Modifier.align(Alignment.BottomCenter))
-        }
-        */
+        Image(
+            painter = painterResource(id = currentImageRes),
+            contentDescription = "Talking Tom",
+            modifier = Modifier.fillMaxSize()
+        )
     }
-}
-
-fun splitBitmap(bitmap: Bitmap): List<ImageBitmap> {
-    val w = bitmap.width / 2
-    val h = bitmap.height / 2
-    val list = mutableListOf<ImageBitmap>()
-    // Order: TL, TR, BL, BR
-    list.add(Bitmap.createBitmap(bitmap, 0, 0, w, h).asImageBitmap())
-    list.add(Bitmap.createBitmap(bitmap, w, 0, w, h).asImageBitmap())
-    list.add(Bitmap.createBitmap(bitmap, 0, h, w, h).asImageBitmap())
-    list.add(Bitmap.createBitmap(bitmap, w, h, w, h).asImageBitmap())
-    return list
 }
